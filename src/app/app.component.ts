@@ -21,10 +21,21 @@ export class AppComponent {
 
   img = 'https://tuhub.ru/sites/default/files/2018-02/vuejs-logo_0.jpg'
 
+  inputValue = ''
+
   constructor() {
     setTimeout(() => {
       this.img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png'
     }, 5000)
   }
+
+  onBlur(str: string) {
+    this.inputValue = str
+  }
+
+  onInput(event: KeyboardEvent) {
+    this.inputValue = (<HTMLInputElement>event.target).value
+  }
+
 
 }

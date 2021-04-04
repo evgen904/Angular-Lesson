@@ -521,6 +521,17 @@
 <p><strong>{{ obj }}</strong></p>
 <p><strong>{{ obj.a }}</strong></p>
 
+
+<input
+  type="text"
+  (keyup)="onInput($event)"
+  (blur)="onBlur(myElement.value)"
+  #myElement
+>
+<p>{{ inputValue }}</p>
+
+
+
 <img [src]="img" alt="">
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
