@@ -35,5 +35,15 @@
 <p>{{ inputText2 }}</p>
 
 
+<hr>
+
+<button (click)="backgroundColor = !backgroundColor">Toggle</button>
+<div [ngStyle]="{
+  width: '200px',
+  height: '200px',
+  borderRadius: '25px',
+  border: '1px solid #ccc',
+  backgroundColor: backgroundColor ? '#c00' : '#0c0'
+}"></div>
 
 

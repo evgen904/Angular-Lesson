@@ -27,6 +27,9 @@ export class AppComponent {
   inputText = 'inputText'
   inputText2 = 'inputText2'
 
+  backgroundColor = false
+
+
   constructor() {
     setTimeout(() => {
       this.img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png'
