@@ -23,6 +23,10 @@ export class AppComponent {
 
   inputValue = ''
 
+
+  inputText = 'inputText'
+  inputText2 = 'inputText2'
+
   constructor() {
     setTimeout(() => {
       this.img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png'
@@ -36,6 +40,11 @@ export class AppComponent {
   onInput(event: KeyboardEvent) {
     this.inputValue = (<HTMLInputElement>event.target).value
   }
+
+  onInputText(event: any) {
+    this.inputText = event.target.value
+  }
+
 
 
 }
