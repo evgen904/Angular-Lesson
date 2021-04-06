@@ -46,4 +46,17 @@
   backgroundColor: backgroundColor ? '#c00' : '#0c0'
 }"></div>
 
+<hr>
 
+<p [ngClass]="{
+  blue: !backgroundColor,
+  green: backgroundColor
+}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, cupiditate!</p>
+
+
+<div
+  [class.blue]="!backgroundColor"
+  [class.green]="backgroundColor"
+>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, consequuntur?
+</div>
