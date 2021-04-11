@@ -75,3 +75,15 @@
 
 
 <!--<p *ngIf="!toggle" class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nesciunt?</p>-->
+
+
+<hr>
+
+<button (click)="toggle = !toggle">toggle</button>
+<button (click)="toggle = 111">Set 111</button>
+
+<div [ngSwitch]="toggle">
+  <p *ngSwitchCase="true" class="green">Lorem ipsum dolor sit.</p>
+  <p *ngSwitchCase="false" class="blue">Lorem ipsum dolor sit. blue</p>
+  <p *ngSwitchDefault>Lorem ipsum dolor.</p>
+</div>

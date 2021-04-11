@@ -29,7 +29,7 @@ export class AppComponent {
 
   backgroundColor = false
 
-  toggle = false
+  toggle: any = false
 
   constructor() {
     setTimeout(() => {
