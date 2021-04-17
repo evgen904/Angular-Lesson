@@ -1,20 +1,26 @@
 <div class="container">
-  <h1>Angular</h1>
+  <h1>Angular directives</h1>
 
-  <h2>Subheader</h2>
+  <p appStyle>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptatem!
+  </p>
 
-  <app-post-form (onAdd)="updatePost($event)"></app-post-form>
-  <hr>
-  <app-post
-    *ngFor="let p of posts"
-    [post]="p"
-    (onRemove)="removePost($event)"
-  >
-    <div #info>
-      <small *ngIf="p.text.length > 14; else short">Пост длинный</small>
-        <ng-template #short>
-          <small>Пост короткий</small>
-        </ng-template>
-    </div>
-  </app-post>
+<!--  <h2>Subheader</h2>-->
+
+<!--  <app-post-form (onAdd)="updatePost($event)"></app-post-form>-->
+<!--  <hr>-->
+<!--  <app-post-->
+<!--    *ngFor="let p of posts"-->
+<!--    [post]="p"-->
+<!--    (onRemove)="removePost($event)"-->
+<!--  >-->
+<!--    <div #info>-->
+<!--      <small *ngIf="p.text.length > 14; else short">Пост длинный</small>-->
+<!--        <ng-template #short>-->
+<!--          <small>Пост короткий</small>-->
+<!--        </ng-template>-->
+<!--    </div>-->
+<!--  </app-post>-->
+
+
 </div>
