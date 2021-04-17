@@ -9,6 +9,37 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptatem!
   </p>
 
+  <button (click)="isVisible = !isVisible" class="btn">Toggle</button>
+
+<!--  <div *ngIf="isVisible" class="wrap">-->
+<!--    <p>-->
+<!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, soluta.-->
+<!--    </p>-->
+<!--  </div>-->
+
+<!--  <ng-template [ngIf]="isVisible">-->
+<!--    <div class="wrap">-->
+<!--      <p>-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, soluta.-->
+<!--      </p>-->
+<!--    </div>-->
+<!--  </ng-template>-->
+
+<!--    <div *appIfnot="isVisible" class="wrap">-->
+<!--      <p>-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, soluta.-->
+<!--      </p>-->
+<!--    </div>-->
+
+    <ng-template [appIfnot]="!isVisible">
+      <div class="wrap">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sunt.
+        </p>
+      </div>
+    </ng-template>
+
+
 <!--  <h2>Subheader</h2>-->
 
 <!--  <app-post-form (onAdd)="updatePost($event)"></app-post-form>-->
