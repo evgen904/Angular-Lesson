@@ -1,7 +1,11 @@
 <div class="container">
   <h1>Angular directives</h1>
 
-  <p appStyle>
+  <p appStyle="green" fontWeight="bold" [dStyle]="{border: '1px solid #c00', borderRadius: '5px'}">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptatem!
+  </p>
+
+  <p appStyle="blue" fontWeight="bold" [dStyle]="{border: '1px solid green', borderRadius: '15px'}">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptatem!
   </p>
 
