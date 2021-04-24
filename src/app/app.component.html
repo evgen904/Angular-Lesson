@@ -1,15 +1,15 @@
 <div class="container">
   <h1>Angular directives</h1>
 
-  <p appStyle="green" fontWeight="bold" [dStyle]="{border: '1px solid #c00', borderRadius: '5px'}">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptatem!
-  </p>
+<!--  <p appStyle="green" fontWeight="bold" [dStyle]="{border: '1px solid #c00', borderRadius: '5px'}">-->
+<!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptatem!-->
+<!--  </p>-->
 
-  <p appStyle="blue" fontWeight="bold" [dStyle]="{border: '1px solid green', borderRadius: '15px'}">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptatem!
-  </p>
+<!--  <p appStyle="blue" fontWeight="bold" [dStyle]="{border: '1px solid green', borderRadius: '15px'}">-->
+<!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptatem!-->
+<!--  </p>-->
 
-  <button (click)="isVisible = !isVisible" class="btn">Toggle</button>
+<!--  <button (click)="isVisible = !isVisible" class="btn">Toggle</button>-->
 
 <!--  <div *ngIf="isVisible" class="wrap">-->
 <!--    <p>-->
@@ -31,13 +31,13 @@
 <!--      </p>-->
 <!--    </div>-->
 
-    <ng-template [appIfnot]="!isVisible">
-      <div class="wrap">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sunt.
-        </p>
-      </div>
-    </ng-template>
+<!--    <ng-template [appIfnot]="!isVisible">-->
+<!--      <div class="wrap">-->
+<!--        <p>-->
+<!--          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sunt.-->
+<!--        </p>-->
+<!--      </div>-->
+<!--    </ng-template>-->
 
 
 <!--  <h2>Subheader</h2>-->
@@ -56,6 +56,21 @@
 <!--        </ng-template>-->
 <!--    </div>-->
 <!--  </app-post>-->
+
+
+
+  <p>
+    {{ e | number:'1.1-5'}}
+  </p>
+
+  <p>
+    {{ e | number:'3.1-2'}}
+  </p>
+
+  <p>
+    {{ e | number:'1.0-0'}}
+  </p>
+
 
 
 </div>
