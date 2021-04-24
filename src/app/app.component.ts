@@ -9,6 +9,8 @@ export class AppComponent implements OnInit{
 
   e: number = Math.E
 
+  str = 'hello world'
+
   ngOnInit(): void {
 
   }
