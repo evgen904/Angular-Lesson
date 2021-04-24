@@ -11,6 +11,8 @@ export class AppComponent implements OnInit{
 
   str = 'hello world'
 
+  date: Date = new Date()
+
   ngOnInit(): void {
 
   }
