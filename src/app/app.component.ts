@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs';
 
 interface Post {
   title: string
@@ -10,7 +11,7 @@ interface Post {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
 
   e: number = Math.E
 
@@ -39,6 +40,17 @@ export class AppComponent implements OnInit{
     {title: 'JavaScript', text: 'Язык программирования JavaScript'}
   ]
 
+  p: Promise<string> = new Promise<string>(resolve => {
+    setTimeout(() => {
+      resolve('New Text')
+    }, 4000)
+  })
+
+  date$: Observable<Date> = new Observable(obs => {
+    setInterval(() => {
+      obs.next(new Date())
+    }, 1000)
+  })
 
   addPost() {
     this.posts.unshift({
@@ -47,9 +59,9 @@ export class AppComponent implements OnInit{
     })
   }
 
-  ngOnInit(): void {
 
-  }
+
+
 
 
 }

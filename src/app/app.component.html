@@ -118,6 +118,13 @@
     <p>{{ post.text }}</p>
   </div>
 
+  <hr>
+
+  <p>Loading ... {{ p | async }}</p>
+
+  <p>Date: {{ date$ | async | date:'HH:mm:ss'}}</p>
+
+
 
 
 </div>
