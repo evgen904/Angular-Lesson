@@ -6,6 +6,7 @@ import {StyleDirective} from './directives/style.directive';
 import { Style2Directive } from './directives/style2.directive';
 import { IfnotDirective } from './directives/ifnot.directive';
 import {MultByPipes} from './pipes/mult-by.pipes';
+import { ExMarksPipe } from './pipes/ex-marks.pipe';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {MultByPipes} from './pipes/mult-by.pipes';
     StyleDirective,
     Style2Directive,
     IfnotDirective,
-    MultByPipes
+    MultByPipes,
+    ExMarksPipe
   ],
   imports: [
     BrowserModule,
