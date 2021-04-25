@@ -40,6 +40,12 @@ export class AppComponent implements OnInit{
   ]
 
 
+  addPost() {
+    this.posts.unshift({
+      title: '123',
+      text: 'Text Text'
+    })
+  }
 
   ngOnInit(): void {
 
