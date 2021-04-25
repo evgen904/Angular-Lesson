@@ -5,13 +5,15 @@ import {FormsModule} from '@angular/forms';
 import {StyleDirective} from './directives/style.directive';
 import { Style2Directive } from './directives/style2.directive';
 import { IfnotDirective } from './directives/ifnot.directive';
+import {MultByPipes} from './pipes/mult-by.pipes';
 
 @NgModule({
   declarations: [
     AppComponent,
     StyleDirective,
     Style2Directive,
-    IfnotDirective
+    IfnotDirective,
+    MultByPipes
   ],
   imports: [
     BrowserModule,
