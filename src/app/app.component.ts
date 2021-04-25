@@ -1,5 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 
+interface Post {
+  title: string
+  text: string
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -24,6 +29,17 @@ export class AppComponent implements OnInit{
       }
     }
   }
+
+  search = ''
+  searchField = 'title'
+
+  posts: Post[] = [
+    {title: 'Beer', text: 'Отличное пиво'},
+    {title: 'Text', text: 'Рандомный текст'},
+    {title: 'JavaScript', text: 'Язык программирования JavaScript'}
+  ]
+
+
 
   ngOnInit(): void {
 
