@@ -8,6 +8,7 @@ import { IfnotDirective } from './directives/ifnot.directive';
 import {MultByPipes} from './pipes/mult-by.pipes';
 import { ExMarksPipe } from './pipes/ex-marks.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     IfnotDirective,
     MultByPipes,
     ExMarksPipe,
-    FilterPipe
+    FilterPipe,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
