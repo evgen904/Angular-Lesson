@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Angular directives</h1>
+  <h1>Angular</h1>
 
 <!--  <p appStyle="green" fontWeight="bold" [dStyle]="{border: '1px solid #c00', borderRadius: '5px'}">-->
 <!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptatem!-->
@@ -57,6 +57,8 @@
 <!--    </div>-->
 <!--  </app-post>-->
 
+
+  <h2>Pipes</h2>
 
 
   <p>
@@ -123,6 +125,31 @@
   <p>Loading ... {{ p | async }}</p>
 
   <p>Date: {{ date$ | async | date:'HH:mm:ss'}}</p>
+
+  <br><br><br>
+  <hr>
+  <br><br><br>
+
+  <h2>Services</h2>
+
+  <div class="card">
+    <h2>Counter: {{ appCounterService.counter }}</h2>
+    <div class="btn" (click)="appCounterService.increase()">+</div>
+    <div class="btn" (click)="appCounterService.decrease()">-</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

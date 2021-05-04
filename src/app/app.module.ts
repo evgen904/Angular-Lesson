@@ -8,6 +8,7 @@ import { IfnotDirective } from './directives/ifnot.directive';
 import {MultByPipes} from './pipes/mult-by.pipes';
 import { ExMarksPipe } from './pipes/ex-marks.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
+import {AppCounterService} from './services/app-counter.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { FilterPipe } from './pipes/filter.pipe';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    AppCounterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

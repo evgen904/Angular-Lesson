@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
+import {AppCounterService} from './services/app-counter.service'
 
 interface Post {
   title: string
@@ -12,6 +13,10 @@ interface Post {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  constructor(public appCounterService : AppCounterService) { }
+
+
 
   e: number = Math.E
 
@@ -58,6 +63,7 @@ export class AppComponent {
       text: 'Text Text'
     })
   }
+
 
 
 
